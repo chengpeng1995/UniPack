@@ -1,0 +1,8 @@
+{
+  "hbuilderVersion": "5.34.2026102909",
+  "source": "DCloud HBuilderX 5.34.2026102909 Vapor iOS launcher uni-static; font data is architecture independent",
+  "files": {
+    "uni-static/uni-scanCode/static/font/uni-scanCode.ttf": "159bc09759ed83a205f3109f73806324544c64229455ea5b5a58e43fc256d350",
+    "uni-static/uni-video/static/font/uni-video-icon.ttf": "46eff3309c5ec44b880e1ee60a626e2d06d4b6c8fac790f8f50a1903826df021"
+  }
+}

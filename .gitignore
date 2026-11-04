@@ -1,0 +1,40 @@
+.build/
+dist/
+.DS_Store
+*.xcuserstate
+xcuserdata/
+tools/tests/
+docs/verification/
+tools/fixtures/
+.impeccable/
+PRODUCT.md
+DESIGN.md
+
+# Local authoring helpers and verification output
+/tools/make-icon.swift
+**/unpackage/
+*.log
+
+# Native build products
+*.ipa
+*.apk
+*.aab
+*.xcarchive/
+*.dSYM/
+
+# Local credentials, service snapshots and downloaded SDKs
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+*.keystore
+*.jks
+*.keychain
+*.keychain-db
+.env
+.env.*
+!.env.example
+/LocalCredentials/
+/GeneratedConfigs/
+/Builds/
+/SDKs/

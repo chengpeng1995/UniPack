@@ -1,0 +1,644 @@
+{
+  "uni-createrequestpermissionlistener": {
+    "libs": [
+      "uni-createRequestPermissionListener-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-createwebviewcontext": {
+    "libs": [
+      "uni-createWebviewContext-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "androidx.webkit:webkit:1.6.0"
+    ],
+    "config": []
+  },
+  "uni-filesystemmanager": {
+    "libs": [
+      "uni-fileSystemManager-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "org.brotli:dec:0.1.2"
+    ],
+    "config": []
+  },
+  "uni-getnetworktype": {
+    "libs": [
+      "uni-getNetworkType-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-installapk": {
+    "libs": [
+      "uni-installApk-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-network": {
+    "libs": [
+      "uni-network-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "com.squareup.okhttp3:okhttp:3.12.12"
+    ],
+    "config": []
+  },
+  "uni-websocket": {
+    "libs": [
+      "uni-websocket-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "com.squareup.okhttp3:okhttp:3.12.12"
+    ],
+    "config": []
+  },
+  "uni-cloud-client": {
+    "libs": [
+      "uni-cloud-client-release.aar"
+    ],
+    "modules": [
+      "uni-network",
+      "uni-storage",
+      "uni-prompt",
+      "uni-media",
+      "uni-websocket",
+      "uni-secure-network",
+      "uni-modal",
+      "uni-showLoading"
+    ],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-media": {
+    "libs": [
+      "uni-media-release.aar",
+      "nativeobj-preview-release.aar"
+    ],
+    "modules": [
+      "uni-prompt",
+      "uni-actionSheet"
+    ],
+    "dependencies": [
+      "com.github.bumptech.glide:glide:4.9.0",
+      "androidx.recyclerview:recyclerview:1.0.0",
+      "androidx.appcompat:appcompat:1.6.1",
+      "androidx.activity:activity-ktx:1.9.2"
+    ],
+    "config": []
+  },
+  "uni-privacy": {
+    "libs": [
+      "uni-privacy-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-getprovider": {
+    "libs": [
+      "uni-getProvider-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-sharewithsystem": {
+    "libs": [
+      "uni-shareWithSystem-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String[]', 'UTSHooksClassArray', '{\"uts.sdk.modules.uniShareWithSystem.ShareWithSystemHook\"}'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String[]', 'UTSHooksClassArray', '{\"uts.sdk.modules.uniShareWithSystem.ShareWithSystemHook\"}'\n}",
+      "defaultConfig {\n    buildConfigField(\"String[]\", \"UTSHooksClassArray\", \"{\\\"uts.sdk.modules.uniShareWithSystem.ShareWithSystemHook\\\"}\")\n}"
+    ]
+  },
+  "uni-createinneraudiocontext": {
+    "libs": [
+      "uni-createInnerAudioContext-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "com.google.android.exoplayer:exoplayer-core:2.18.0"
+    ],
+    "config": []
+  },
+  "uni-getbackgroundaudiomanager": {
+    "libs": [
+      "uni-getBackgroundAudioManager-release.aar"
+    ],
+    "modules": [
+      "uni-network"
+    ],
+    "dependencies": [
+      "com.google.android.exoplayer:exoplayer-core:2.18.0"
+    ],
+    "config": []
+  },
+  "uni-chooselocation": {
+    "libs": [
+      "uni-chooseLocation-release.aar"
+    ],
+    "modules": [
+      "uni-theme",
+      "uni-getLocation",
+      "uni-cloud-client",
+      "uni-map-tencent"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniChooseLocation.UniChooseLocationExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniChooseLocation.UniChooseLocationExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniChooseLocation.UniChooseLocationExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-actionsheet": {
+    "libs": [
+      "uni-actionSheet-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniActionSheet.UniActionSheetExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniActionSheet.UniActionSheetExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniActionSheet.UniActionSheetExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-previewimage": {
+    "libs": [
+      "uni-previewImage-release.aar"
+    ],
+    "modules": [
+      "uni-media",
+      "uni-network",
+      "uni-fileSystemManager",
+      "uni-storage",
+      "uni-prompt",
+      "uni-modal",
+      "uni-actionSheet"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniPreviewImage.UniPreviewImageExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniPreviewImage.UniPreviewImageExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniPreviewImage.UniPreviewImageExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-choosemedia": {
+    "libs": [
+      "uni-chooseMedia-release.aar"
+    ],
+    "modules": [
+      "uni-modal",
+      "uni-actionSheet"
+    ],
+    "dependencies": [
+      "androidx.appcompat:appcompat:1.6.1",
+      "androidx.activity:activity-ktx:1.9.2"
+    ],
+    "config": []
+  },
+  "uni-arraybuffertobase64": {
+    "libs": [
+      "uni-arrayBufferToBase64-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-base64toarraybuffer": {
+    "libs": [
+      "uni-base64ToArrayBuffer-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-sse": {
+    "libs": [
+      "uni-sse-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "com.squareup.okhttp3:okhttp-sse:3.12.12"
+    ],
+    "config": []
+  },
+  "uni-modal": {
+    "libs": [
+      "uni-modal-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniModal.UniModalExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniModal.UniModalExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniModal.UniModalExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-camera": {
+    "libs": [
+      "uni-camera-release.aar"
+    ],
+    "modules": [
+      "uni-media"
+    ],
+    "dependencies": [
+      "androidx.camera:camera-core:1.4.1",
+      "androidx.camera:camera-camera2:1.4.1",
+      "androidx.camera:camera-lifecycle:1.4.1",
+      "androidx.camera:camera-view:1.4.1",
+      "androidx.appcompat:appcompat:1.7.0"
+    ],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniCamera.UniCameraExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniCamera.UniCameraExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniCamera.UniCameraExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-requestmerchanttransfer": {
+    "libs": [
+      "uni-requestMerchantTransfer-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "com.tencent.mm.opensdk:wechat-sdk-android:6.8.0"
+    ],
+    "config": []
+  },
+  "uni-recorder": {
+    "libs": [
+      "uni-recorder-release.aar",
+      "audio-mp3aac-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-makephonecall": {
+    "libs": [
+      "uni-makePhoneCall-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-clipboard": {
+    "libs": [
+      "uni-clipboard-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-keyboard": {
+    "libs": [
+      "uni-keyboard-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-opendocument": {
+    "libs": [
+      "uni-openDocument-release.aar"
+    ],
+    "modules": [
+      "uni-fileSystemManager"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String[]', 'UTSHooksClassArray', '{\"uts.sdk.modules.DCloudUniOpenDocument.UniOpenDocumentHookProxy\"}'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String[]', 'UTSHooksClassArray', '{\"uts.sdk.modules.DCloudUniOpenDocument.UniOpenDocumentHookProxy\"}'\n}",
+      "defaultConfig {\n    buildConfigField(\"String[]\", \"UTSHooksClassArray\", \"{\\\"uts.sdk.modules.DCloudUniOpenDocument.UniOpenDocumentHookProxy\\\"}\")\n}"
+    ]
+  },
+  "uni-barcode-scanning": {
+    "libs": [
+      "uni-barcode-scanning-release.aar"
+    ],
+    "modules": [
+      "uni-camera",
+      "uni-getSystemInfo"
+    ],
+    "dependencies": [
+      "androidx.camera:camera-core:1.4.1",
+      "com.google.mlkit:barcode-scanning:17.2.0",
+      "com.github.albfernandez:juniversalchardet:2.0.4"
+    ],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String[]', 'UTSHooksClassArray', '{\"uts.sdk.modules.DCloudUniBarcodeScanning.AppHookProxy\"}'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String[]', 'UTSHooksClassArray', '{\"uts.sdk.modules.DCloudUniBarcodeScanning.AppHookProxy\"}'\n}",
+      "defaultConfig {\n    buildConfigField(\"String[]\", \"UTSHooksClassArray\", \"{\\\"uts.sdk.modules.DCloudUniBarcodeScanning.AppHookProxy\\\"}\")\n}"
+    ]
+  },
+  "uni-match-media": {
+    "libs": [
+      "uni-match-media-release.aar"
+    ],
+    "modules": [
+      "uni-getDeviceInfo"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"type\\\":\\\"customElement\\\",\\\"name\\\":\\\"match-media\\\",\\\"class\\\":\\\"uts.sdk.modules.DCloudUniMatchMedia.UniMatchMediaElementRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"type\\\":\\\"customElement\\\",\\\"name\\\":\\\"match-media\\\",\\\"class\\\":\\\"uts.sdk.modules.DCloudUniMatchMedia.UniMatchMediaElementRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"type\\\\\\\":\\\\\\\"customElement\\\\\\\",\\\\\\\"name\\\\\\\":\\\\\\\"match-media\\\\\\\",\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniMatchMedia.UniMatchMediaElementRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-scancode": {
+    "libs": [
+      "uni-scanCode-release.aar"
+    ],
+    "modules": [
+      "uni-camera",
+      "uni-barcode-scanning",
+      "uni-media",
+      "uni-getSystemInfo"
+    ],
+    "dependencies": [
+      "androidx.camera:camera-core:1.4.1",
+      "androidx.appcompat:appcompat:1.7.0"
+    ],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniScanCode.UniScanCodeExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniScanCode.UniScanCodeExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniScanCode.UniScanCodeExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-rich-text": {
+    "libs": [
+      "richtext-release.aar"
+    ],
+    "modules": [
+      "uni-arrayBufferToBase64",
+      "uni-web-view"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"type\\\":\\\"customElement\\\",\\\"name\\\":\\\"rich-text\\\",\\\"class\\\":\\\"uts.sdk.modules.DCloudUniRichText.UniRichTextElementRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"type\\\":\\\"customElement\\\",\\\"name\\\":\\\"rich-text\\\",\\\"class\\\":\\\"uts.sdk.modules.DCloudUniRichText.UniRichTextElementRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"type\\\\\\\":\\\\\\\"customElement\\\\\\\",\\\\\\\"name\\\\\\\":\\\\\\\"rich-text\\\\\\\",\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniRichText.UniRichTextElementRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniRichText.UniRichTextExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniRichText.UniRichTextExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniRichText.UniRichTextExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-live-player": {
+    "libs": [
+      "uni-live-player-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "com.qiniu:qplayer2-core:1.5.0"
+    ],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniLivePlayer.UniLivePlayerExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniLivePlayer.UniLivePlayerExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniLivePlayer.UniLivePlayerExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-live-pusher": {
+    "libs": [
+      "uni-live-pusher-release.aar",
+      "pldroid-media-streaming-3.1.6.jar"
+    ],
+    "modules": [
+      "uni-fileSystemManager",
+      "uni-network"
+    ],
+    "dependencies": [
+      "androidx.core:core:1.10.1",
+      "android.arch.lifecycle:extensions:1.1.1",
+      "com.qiniu:happy-dns:1.0.0"
+    ],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniLivePusher.UniLivePusherExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniLivePusher.UniLivePusherExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniLivePusher.UniLivePusherExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-loading": {
+    "libs": [
+      "uni-loading-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniLoading.UniLoadingExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniLoading.UniLoadingExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniLoading.UniLoadingExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-showloading": {
+    "libs": [
+      "uni-showLoading-release.aar"
+    ],
+    "modules": [
+      "uni-theme",
+      "uni-getSystemInfo",
+      "uni-loading"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniShowLoading.UniShowLoadingExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniShowLoading.UniShowLoadingExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniShowLoading.UniShowLoadingExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-web-view": {
+    "libs": [
+      "uni-web-view-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "androidx.webkit:webkit:1.6.0",
+      "androidx.appcompat:appcompat:1.1.0"
+    ],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniWebView.UniWebViewExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniWebView.UniWebViewExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniWebView.UniWebViewExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-accelerometer": {
+    "libs": [
+      "uni-accelerometer-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-authentication": {
+    "libs": [
+      "uni-authentication-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-calendar": {
+    "libs": [
+      "uni-calendar-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-compass": {
+    "libs": [
+      "uni-compass-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-editor": {
+    "libs": [
+      "uni-editor-release.aar"
+    ],
+    "modules": [
+      "uni-web-view"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniEditor.UniEditorExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniEditor.UniEditorExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniEditor.UniEditorExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-gyroscope": {
+    "libs": [
+      "uni-gyroscope-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-memory": {
+    "libs": [
+      "uni-memory-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-phonecontact": {
+    "libs": [
+      "uni-phoneContact-release.aar"
+    ],
+    "modules": [
+      "uni-media",
+      "uni-getAppBaseInfo",
+      "uni-actionSheet"
+    ],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-picker": {
+    "libs": [
+      "uni-picker-release.aar"
+    ],
+    "modules": [
+      "uni-theme",
+      "uni-getSystemInfo",
+      "uni-getAppBaseInfo",
+      "uni-getDeviceInfo"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniPicker.UniPickerExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"},{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniPicker.UniPickerExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniPicker.UniPickerExtApiComponentsRegister\\\",\\\"method\\\":\\\"register\\\"},{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniPicker.UniPickerExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniPicker.UniPickerExtApiComponentsRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"},{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniPicker.UniPickerExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-screenbrightness": {
+    "libs": [
+      "uni-screenBrightness-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-vibrate": {
+    "libs": [
+      "uni-vibrate-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-openlocation": {
+    "libs": [
+      "uni-openLocation-release.aar"
+    ],
+    "modules": [
+      "uni-actionSheet",
+      "uni-getAppBaseInfo",
+      "uni-theme",
+      "uni-prompt",
+      "uni-getSystemInfo",
+      "uni-map-tencent"
+    ],
+    "dependencies": [],
+    "config": [
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniOpenLocation.UniOpenLocationExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}\n",
+      "defaultConfig {\n    buildConfigField 'String', 'UTSEasyCom', '\"[{\\\"class\\\":\\\"uts.sdk.modules.DCloudUniOpenLocation.UniOpenLocationExtApiPagesRegister\\\",\\\"method\\\":\\\"register\\\"}]\"'\n}",
+      "defaultConfig {\n    buildConfigField(\"String\", \"UTSEasyCom\", \"\\\"[{\\\\\\\"class\\\\\\\":\\\\\\\"uts.sdk.modules.DCloudUniOpenLocation.UniOpenLocationExtApiPagesRegister\\\\\\\",\\\\\\\"method\\\\\\\":\\\\\\\"register\\\\\\\"}]\\\"\")\n}"
+    ]
+  },
+  "uni-form": {
+    "libs": [
+      "uni-form-release.aar"
+    ],
+    "modules": [
+      "uni-theme",
+      "uni-getSystemInfo",
+      "uni-dialogPage",
+      "uni-event"
+    ],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-requestsystempermission": {
+    "libs": [
+      "uni-requestSystemPermission-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [
+      "com.github.getActivity:XXPermissions:18.63"
+    ],
+    "config": []
+  },
+  "uni-install-wgt": {
+    "libs": [
+      "uni-install-wgt-release.aar"
+    ],
+    "modules": [
+      "uni-fileSystemManager",
+      "uni-zstd-decompress"
+    ],
+    "dependencies": [],
+    "config": []
+  },
+  "uni-zstd-decompress": {
+    "libs": [
+      "uni-zstd-decompress-release.aar"
+    ],
+    "modules": [],
+    "dependencies": [],
+    "config": []
+  }
+}
